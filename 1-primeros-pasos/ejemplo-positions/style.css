@@ -1,0 +1,24 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+
+header {
+    background-color: darkolivegreen;
+}
+
+#page-body {
+    background-color: rgb(151, 121, 62);
+}
+
+aside {
+    position: absolute;
+    top: 100px;
+    left: 0px;
+    background-color: blue;
+}
+
+footer {
+    background-color: lightslategrey;
+}

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .grid{
+            display: grid;
+            /* grid-template-columns: 1fr 1fr 2fr;
+            grid-template-rows: 2fr 1fr; */
+            /* grid-template: 2fr 1fr / 1fr 1fr 2fr; */
+            grid-template: 2fr 1fr / repeat(2, 1fr) 2fr;
+
+            height: 300px;
+        }
+
+        .grid :nth-child(1) {background: indigo;}
+        .grid :nth-child(2) {background: darkred;}
+        .grid :nth-child(3) {background: green;}
+        .grid :nth-child(4) {background: gold;}
+        .grid :nth-child(5) {background: orangered;}
+        .grid :nth-child(6) {background: purple}
+    </style>
+</head>
+<body>
+    <div class="grid">
+        <div>Primera celda</div>
+        <div>Segunda celda</div>
+        <div>Tercera celda</div>
+        <div>Cuarta celda</div>
+        <div>Quinta celda</div>
+        <div>Sexta celda</div>
+    </div>
+    
+</body>
+</html>
