@@ -12,6 +12,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;1,300&display=swap"
         rel="stylesheet">
 
+    <!-- JS custom -->
+    <script src="main.js" defer></script>
+
     <!-- css custom -->
     <link rel="stylesheet" href="style.css">
 </head>
@@ -19,6 +22,7 @@
 <body>
     <header>
         <nav>
+            <button id="closeMenu" class="close-btn">✕</button>
             <ul class="menu">
                 <li><a href="#">Inicio</a></li>
                 <li><a href="#">Servicios</a></li>
@@ -30,8 +34,8 @@
         </div>
         <div class="search">
             <input type="text" placeholder="Buscar..." autofocus>
-            <a>🔎︎</a>
-            <button class="hamburger">☰</button>
+            <a id="search-lens">🔎︎</a>
+            <button class="hamburger" id="burger">☰</button>
         </div>
     </header>
     <div class="cta-container">
