@@ -1,0 +1,29 @@
+main {
+    padding: 1rem;
+}
+
+img {
+    max-width: 100%;
+}
+
+.content {
+    columns: 1;
+}
+
+@media (min-width: 480px) {
+    .content {
+        columns: 2;
+    }
+}
+
+@media (min-width: 768px) {
+    .content {
+        columns: 3;
+    }
+}
+
+@media (min-width: 1024px) {
+    .content {
+        columns: 4;
+    }
+}
