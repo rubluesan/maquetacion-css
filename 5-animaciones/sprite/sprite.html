@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo Animación</title>
+    <style>
+        .bernard {
+            width: 112px;
+            height: 156px;
+            border: 4px solid blue;
+            background-image: url("bernard-bernoulli.png");
+            animation: walk 0.75s steps(6) infinite,
+                move 6s linear normal infinite,
+                mirror 6s steps(1) normal infinite;
+        }
+
+        @keyframes walk {
+            to {
+                background-position: -672px;
+            }
+        }
+
+        @keyframes move {
+            0% {
+                translate: 0
+            }
+
+            50% {
+                translate: 600px
+            }
+
+            100% {
+                translate: 0
+            }
+        }
+
+        @keyframes mirror {
+            0% {
+                scale: 1 1;
+            }
+
+            50% {
+                scale: -1 1;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="bernard"></div>
+</body>
+
+</html>

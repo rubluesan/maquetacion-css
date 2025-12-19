@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo Animación</title>
+    <style>
+        .cuadro {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            position:absolute;
+            animation: mover-cuadro 8s infinite;
+        }
+
+        @keyframes mover-cuadro {
+            0% {
+                top: 0px;
+                left: 0px;
+            }
+            25% {
+                top: 0px;
+                left: calc(100% - 100px);
+            }
+            50% {
+                top: calc(100% - 100px);
+                left: calc(100% - 100px);
+            }
+            75%{
+                top: calc(100% - 100px);
+                left: 0px;
+            }
+            100%{
+                top: 0px;
+                left: 0px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="cuadro"></div>
+</body>
+</html>
