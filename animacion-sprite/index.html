@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animacion Sprite</title>
+    <script src="skeleton-movement.js" defer></script>
+    <style>
+        .skeleton {
+            width: 64px;
+            height: 64px;
+            border: 4px solid blue;
+
+            background-image: url("skeleton.png");
+            background-repeat: no-repeat;
+            background-position: 0 0;
+
+            position: absolute;
+            left: 100px;
+            top: 200px;
+
+            animation: walk 0.75s steps(9) infinite;
+            animation-play-state: paused;
+        }
+
+        @keyframes walk {
+            to {
+                background-position: -576px 0;
+            }
+        }
+
+        .left {
+            transform: scaleX(-1);
+        }
+
+        @keyframes walk {
+            to {
+                background-position: -576px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="skeleton" id="skeleton"></div>
+</body>
+
+</html>
