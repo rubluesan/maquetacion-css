@@ -1,0 +1,56 @@
+.yoyo {
+    position: relative;
+    top:100px;
+    left: 100px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: radial-gradient(circle at 30% 30%, #dc8989, #b30000);
+
+    animation-name: rotacion-traslacion;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    z-index: 100;
+}
+
+.cuerda {
+    position: relative;
+    top: 0px;
+    left: 125px;
+    height: 100px;
+    width: 2px;
+    background-color: #dc8989;
+    animation-name: enrollar;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    z-index: 10;
+}
+
+@keyframes rotacion-traslacion {
+    0% {
+        transform: translate(0px,0px) rotate(-360deg);
+    }
+
+    50% {
+        transform: translate(0px,200px) rotate(360deg);
+    }
+
+    100%{
+        transform: translate(0px,0px) rotate(-360deg);
+    }
+}
+
+@keyframes enrollar {
+    0% {
+        height: 95px;
+    }
+
+    50% {
+        height: 300px;
+    }
+
+    100%{
+        height: 95px;
+    }
+}
+
